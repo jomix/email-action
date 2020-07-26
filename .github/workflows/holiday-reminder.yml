@@ -2,11 +2,12 @@ name: reminder
 
 on:
   schedule:
-    - cron: '25 11 * * sun'
+    - cron: '0/5 * * * sun'
 
 jobs:
   happy-new-year:
     runs-on: ubuntu-latest
     steps:
-    - name: throw error
-      run: exit 1
+    - name: Say Hello World
+      uses: ajilraju/helloworld-actions@v1.3
+
